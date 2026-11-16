@@ -1,6 +1,6 @@
 import type { ExtensionAPI } from '@earendil-works/pi-coding-agent';
-import { acquire } from 'pi-code-core';
-import { registerStopHook } from 'pi-code-core/extensions/hooks';
+import { acquire } from '@kabaevroman/pi-code-core';
+import { registerStopHook } from '@kabaevroman/pi-code-core/extensions/hooks';
 export default function (pi: ExtensionAPI): void {
   const state = acquire(pi,'hooks'); if (!state) return;
   const {runtime:r,features} = state;
